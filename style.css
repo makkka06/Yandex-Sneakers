@@ -1,0 +1,257 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+body{
+  font-family: "Anonymous Pro", sans-serif;
+  background-color: #F1F1F1;
+}
+main{
+  margin-top: 25px;
+}
+h1 {
+    font-size: 56px;
+}
+h2 {
+	font-size: 48px;
+}
+
+h3 {
+  
+	font-size: 26px;
+}
+h4{
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #A1A6B4;
+  text-align: center;
+  padding-bottom: 21px;
+  border-top: 1px solid rgba(161, 166, 180, 0.4);
+  padding-top: 18px;
+}
+p {
+
+  font-family: "Anonymous Pro", sans-serif;
+  font-size: 20px;
+}
+
+
+.container {
+  max-width: 1161px;
+  width: 100%;
+  margin: 0 auto;
+}
+.header{
+  padding-top: 30px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #A1A6B4;
+  background-color: white;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.header__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.footer{
+  margin-top: 51px;
+  padding-top: 32.31px;
+  background-color: #121723;
+}
+.footer__up{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 32.99px;
+}
+.header__container a{
+  color: black;
+}
+
+.footer__container a{
+  color: white;
+}
+.nav a:hover{
+  color: green;
+  transition: .5s;
+}
+
+.cards{
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+ column-gap: 24px;
+ row-gap: 24px;
+ justify-content: center;
+ align-items: flex-start;
+ 
+}
+.sneaker{
+width: 100%;
+max-width: 371px;
+background-color: white;
+border-radius: 12px;
+color: black;
+overflow: hidden;
+}
+
+
+.sneaker__title{
+padding: 32px 24px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  font-weight: bold; 
+  padding: 0;
+}
+
+.sneaker__hover:hover{
+  background-color: #F1F1F1;
+  box-shadow: 0px 0px 8px 7px rgba(34, 60, 80, 0.26);
+  transform: translateY(-10px);
+  transition: 0.3s ease-in-out;
+
+}
+
+/* здесь начинается код для отдельного кроссовка sneaker html*/
+
+.nike{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0 48px;
+  border-radius: 50px;
+}
+.solo__title{
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  }
+.solo__title h3{
+  font-size: 48px;
+  font-weight: 400;
+}
+.solo__title p{
+  font-size: 36px;
+  
+}
+.description{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+
+}
+.description__about{
+  max-width: 506px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 28px;
+  padding-bottom: 48px;
+}
+.description__product{
+  width: 506px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.description__product_title{
+  font-size: 30px;
+  font-weight: 400;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+.description__product_box{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  border-bottom: 1px solid black;
+}
+.description__product_box span{
+  font-size: 20px;
+}
+
+@media (max-width: 1178px){
+  h1{
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px){
+  .header__container img{
+    max-width: 85%;
+    width: 100%
+  }
+  .header__container{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .footer__up{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-bottom: 25px;
+  }
+  .footer__up img{
+    max-width: 100%;
+    
+  }
+  .cards img{
+    max-width: 371px;
+    width: 100%;
+  }
+  
+  h1{
+    font-size: 35px;
+  }
+}
+@media (max-width: 500px){
+  main{
+    padding: 0 16px;
+  }
+  .nike {
+    padding: 0 24px 24px;
+    border-radius: 12px;
+}
+  .description {
+    gap: 32px;
+}
+.solo__title {
+  gap: 26px;
+}
+  .solo__title h3 {
+    font-size: 32px;
+}
+.solo__title p {
+  font-size: 20px;
+}
+.description__about {
+  font-size: 16px;
+  padding: 0;
+}
+.description__product_title {
+  font-size: 24px;
+}
+.description__product_box span {
+  font-size: 16px;
+}
+}
